@@ -6,7 +6,11 @@ function Products() {
 		<ul className="products">
 			{products.map((product, idx) => {
 				return (
-					<ProductCard key={idx} name={product.name} price={product.price} />
+					<ProductCard
+						key={idx}
+						name={product.name}
+						price={product.price}
+					/>
 				);
 			})}
 		</ul>

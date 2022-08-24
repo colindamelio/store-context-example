@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
+
 import Nav from "./components/Nav";
 import Products from "./components/Products";
 import Checkout from "./components/Checkout";
@@ -11,10 +12,14 @@ function App() {
 
 			<Routes>
 				<Route path="/" element={<Products />} />
-				<Route path="/checkout" element={<Checkout />} />
+				<Route
+					path="/checkout"
+					element={<Checkout />}
+				/>
 			</Routes>
 		</div>
 	);
 }
 
 export default App;
+
